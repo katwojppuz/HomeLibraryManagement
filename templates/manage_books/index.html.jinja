@@ -1,0 +1,22 @@
+{% extends "base.html.jinja" %}
+
+{% block content %}
+    <h2 class="w-full bg-white rounded-lg shadow-md p-4 text-lg font-semibold text-center">Lista książek</h2>
+    <section class="w-full grid grid-cols-[1fr_3fr] gap-4 mt-4">
+        <div class="flex flex-col bg-white rounded-lg shadow-md p-4">
+            <h3 class="text-md font-semibold mb-2">Filtry</h3>
+            <input type="text" placeholder="Szukaj książki..." class="w-full p-2 mb-4 border rounded">
+            <ul class="list-disc list-inside">
+                <li><a href="#" class="text-blue-500 hover:underline">Wszystkie książki</a></li>
+                <li><a href="#" class="text-blue-500 hover:underline">Dostępne</a></li>
+                <li><a href="#" class="text-blue-500 hover:underline">Wypożyczone</a></li>
+                <li><a href="#" class="text-blue-500 hover:underline">Ulubione</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col bg-white rounded-lg shadow-md p-4">
+            <h3 class="text-md font-semibold mb-2">Książki</h3>
+            <p>Tu będzie lista książek...</p>
+        </div>
+    </section>
+        
+{% endblock %}
